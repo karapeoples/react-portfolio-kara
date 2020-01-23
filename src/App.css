@@ -8,8 +8,6 @@
   min-height: 10vh;
   display: flex;
   align-items: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 .logo{
   margin-left: 10%
@@ -17,7 +15,12 @@
 
 nav{
   display: flex;
-  justify-content: space-evenly;
-  margin-left: 15%;
+  margin-left: -5%;
+  
 }
 
+.link{
+  text-decoration: underline overline;
+  color: darkorchid;
+  margin-left: 100%;
+}
