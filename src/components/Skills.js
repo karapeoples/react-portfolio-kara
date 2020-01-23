@@ -3,9 +3,9 @@ import programs from "../images/programs.jpeg";
 import languages from "../images/computerlanguages.jpeg";
 import adobe from "../images/otherskills.jpeg";
 
-let computer = ["Word", "Excel", "PowerPoint"];
+let computer = ["Word", "Excel", "PowerPoint", 'VSCode Editor', ];
 let adobeArr = ["Photoshop", "InDesign", "Illustrator", "Bridge"];
-let language = ["HTML", "CSS", "LESS", "JS", "JSX/React"];
+let language = ["HTML", "CSS", "LESS", "JS", "React"];
 const Skills = () => {
 	return (
 		<div>
