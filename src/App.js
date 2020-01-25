@@ -8,6 +8,7 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import GitHub from "./components/git-hub/GitHub";
 
+
 function App() {
 	return (
 		<div className="App">
@@ -15,19 +16,25 @@ function App() {
 				<Link to="/">
 					<img src={logo} alt="lambda-grad" className="logo" />
 				</Link>
+
 				<nav>
+					
 					<Link to="/about" className="link">
-						<button>About</button>
+						<button className='navButton'>About</button>
 					</Link>
+
 					<Link to="/skills" className="link">
-						<button>Skills</button>
+					<button className='navButton'>Skills</button>
 					</Link>
+
 					<Link to="/git-hub" className="link">
-						<button>GitHub</button>
+						<button className='navButton'>GitHub</button>
 					</Link>
+
 					<Link to="/contact" className="link">
-						<button>Contact</button>
+						<button className='navButton'>Contact</button>
 					</Link>
+
 				</nav>
 			</header>
 			<div>

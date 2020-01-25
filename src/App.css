@@ -1,26 +1,237 @@
 .App {
-  text-align: center;
+  text-align: center; 
+  font-family: 'Vast Shadow', cursive;
 }
 
 
 .App-header{
-  background-color: #61dafb;
+  background-color: black;
   min-height: 10vh;
   display: flex;
   align-items: center;
 }
 .logo{
-  margin-left: 10%
+  margin-left: 10%;
+  height: 100px;
 }
 
 nav{
   display: flex;
-  margin-left: -5%;
+  margin-left: -10%;
   
 }
 
 .link{
-  text-decoration: underline overline;
-  color: darkorchid;
-  margin-left: 100%;
+  margin-left: 50%;
 }
+
+.navButton{
+  background: gold;
+  color: maroon ;
+  border: 2px solid maroon;
+  border-radius: 2%;
+  font-size: 20px;
+}
+.navButton:hover{
+    background: maroon;
+    color: gold;
+  }
+
+  .landWrapper{
+    margin-top: 4%;
+  }
+.design {
+    position: relative; width: 20%; height: 300px;
+    margin: auto; margin-top: 5%;    
+}
+
+ .design > * { position: absolute; height: 100%; width: 100%; }
+ .blend > * { position: absolute; height: 100%; width: 100%; }
+
+.rotatedBorder {
+    box-sizing: border-box; border: 15px maroon solid;
+    transform: rotate(45deg);
+    box-shadow: 0 0 10px maroon, inset 0 0 20px maroon;
+}
+.coverPage{
+  margin-left: -50%;
+}
+.grid { display: grid; grid: repeat(2, 1fr) / repeat(2, 1fr); }
+
+[data-white]{ background-color: white; }
+
+.blend { mix-blend-mode: multiply; }
+
+.coverPage { object-fit: cover; }
+
+.design > .coverPage{box-shadow: 0 0 20px #bac3c3; }
+
+.aboutH1{
+  color: gold;
+  font-size: 40px;
+  font-family: 'Cinzel Decorative', cursive;
+}
+.image{
+  width: 50%;
+  margin: 1% auto;
+  border: 10px groove maroon;
+  height: 50vh;
+}
+
+.ul{
+  display: flex;
+  margin-left: -5%;
+  list-style-image: url('./images/bullet.png');
+}
+.list{
+  margin: 0 auto;
+}
+.ulB{
+  display: flex;
+  margin-left: -5%;
+  list-style-image: url('./images/bullet.png');
+}
+
+
+
+.userCardSection{
+  width: 60%;
+  margin: 0 auto;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 25px;
+  width: 80%;
+  color: gold;
+   
+ }
+ 
+ .fcContainer{
+   font-family: 'Forum', cursive;
+   font-size: 25px;
+   width: 33%;
+   margin: .0 auto;
+   color: gold;
+ }
+ .fctitle{
+   font-family: 'Forum', cursive;
+   font-size: 25px;
+   width: 75%;
+   margin: 0 auto;
+   color: gold;
+   
+ }
+ 
+ .imgDiv{
+   display: flex;
+   justify-content: center;
+   margin: 0 auto;
+   font-size: 250%;
+   width: 75%;
+   
+ }
+ 
+ form{
+   margin: 2%;
+   background: gold;
+   padding: 2%;
+   color: maroon;
+   text-align: center;
+ }
+ .frame{
+   border : 5px solid white;
+   margin: 2%;
+   padding: 1%;
+   
+ }
+ .font{
+   font-family: 'Vast Shadow', cursive;
+ }
+ .avatar{
+   width: 98%;
+ }
+ 
+ .ucicons{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   width: 25%;
+   margin-left: 35%;
+   margin-top: -5%;
+ }
+ 
+ .ficons{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   width: 25%;
+   margin-left: 55%;
+   margin-top: -10%;
+   
+ }
+ .ucspan{
+   margin: 5%;
+   font-size: 35px;
+ }
+ 
+ .fspan{
+   margin: 5%;
+   font-size: 35px;
+ }
+ 
+ .gh{
+   color: black;
+   background: white;
+   border: 2px solid black;
+   padding: 2%;
+   
+ }
+ 
+ .branch{
+   color: black;
+   background: white;
+   border: 2px solid black;
+   padding: 2%;
+ }
+ 
+ .img {
+   border : 5px solid white;
+   margin: 0 auto;
+   
+ }
+ .border{
+   background: black;
+   padding: 1%;
+ }
+ 
+ .back{
+   background:maroon;
+   border: 3px groove black;
+ }
+ 
+ .bullet {
+   list-style-image: url('./images/bullet.png');
+   text-align: justify;
+   
+ }
+ .ulA{
+   margin: 0 auto;
+   width: 25%;
+   
+ }
+ .userCalendar{
+   border: 3px solid black;
+   width: 75%;
+   margin: 1% auto;
+ }
+
+ .followerCalendar{
+  border: 3px solid black;
+  width: 90%;
+  margin: 1% auto;
+ }
+
+ .contact {
+   display: flex;
+   flex-direction: column;
+   width: 25%;
+   margin: 5% auto;
+ }

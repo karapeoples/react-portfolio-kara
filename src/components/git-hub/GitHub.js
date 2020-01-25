@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import UserCard from "./UserCard";
+import { Row } from 'reactstrap';
 import FollowerCard from "./FollowerCard";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
@@ -45,7 +46,10 @@ const GitHub = () => {
 
 	const handleChange = e => {
 		setSearchTerm(e.target.value);
-	};
+  };
+  
+
+  
 
 	return (
 		<div>
@@ -53,6 +57,7 @@ const GitHub = () => {
 
 			<UserCard
 				name={user.name}
+				login={user.login}
 				img={user.avatar_url}
 				github={user.html_url}
 				files={user.repos_url}
@@ -73,6 +78,7 @@ const GitHub = () => {
 				</form>
 				{searchTerm.length === 0 ? (
 					<div>
+						<Row>
 						{followersList.map(info => {
 							return (
 								<FollowerCard
@@ -85,6 +91,7 @@ const GitHub = () => {
 								/>
 							);
 						})}
+						</Row>
 					</div>
 				) : (
 					<div>
