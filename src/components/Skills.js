@@ -2,56 +2,68 @@ import React from "react";
 import programs from "../images/programs.jpeg";
 import languages from "../images/computerlanguages.jpeg";
 import adobe from "../images/otherskills.jpeg";
+import { Card, Image } from 'semantic-ui-react'
 
 let computer = ["Word", "Excel", "PowerPoint", 'VSCode Editor', ];
 let adobeArr = ["Photoshop", "InDesign", "Illustrator", "Bridge"];
 let language = ["HTML", "CSS", "LESS", "JS", "React"];
 const Skills = () => {
+
+	const card1 = {
+    width: '80%',
+    margin: '1% auto',
+    padding: '1%',
+    background: 'black', 
+}
+const gold = {
+  color: 'gold',
+  fontSize: '18px',
+}
 	return (
 		<div>
 			<h1>Skills</h1>
 
-			<section className="language">
+			<Card style={card1}>
 				<div>
-					<img src={languages} alt="computer languages" />
+					<Image className='image'src={languages} alt="computer languages" />
 				</div>
-				<div>
-          <ul>
+				<div style={gold}>
+          <ul className='ulB'>
           {language.map(info => {
          return(
-           <li> {info} </li>
+           <li className='list'> {info} </li>
         )})}
           </ul>
 				</div>
-			</section>
+			</Card>
 
-			<section className="adobe">
+			<Card style={card1}>
 				<div>
-					<img src={adobe} alt="adobe skills" />
+					<Image className='image'src={adobe} alt="adobe skills" />
 				</div>
-				<div>
-          <ul>
+				<div style={gold}>
+          <ul className='ulB'>
           {adobeArr.map(info => {
          return(
-           <li> {info} </li>
+           <li className="list"> {info} </li>
         )})}
           </ul>
 				</div>
-			</section>
+			</Card>
 
-			<section className="computer">
+			<Card style={card1}>
 				<div>
-					<img src={programs} alt="computer programs" />
+					<Image className='image' src={programs} alt="computer programs" />
 				</div>
-				<div>
-          <ul>
+				<div style={gold}>
+          <ul className='ulB'>
           {computer.map(info => {
          return(
-           <li> {info} </li>
+           <li className='list'> {info} </li>
         )})}
           </ul>
 				</div>
-			</section>
+			</Card>
 		</div>
 	);
 };
