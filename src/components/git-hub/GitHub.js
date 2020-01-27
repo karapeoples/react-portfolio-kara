@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import UserCard from "./UserCard";
-import { Row } from 'reactstrap';
+import { Row } from "reactstrap";
 import FollowerCard from "./FollowerCard";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
@@ -46,10 +46,7 @@ const GitHub = () => {
 
 	const handleChange = e => {
 		setSearchTerm(e.target.value);
-  };
-  
-
-  
+	};
 
 	return (
 		<div>
@@ -79,34 +76,36 @@ const GitHub = () => {
 				{searchTerm.length === 0 ? (
 					<div>
 						<Row>
-						{followersList.map(info => {
-							return (
-								<FollowerCard
-									name={info.login}
-									img={info.avatar_url}
-									github={info.html_url}
-									files={info.repos_url}
-									iconGH={faGithubSquare}
-									iconB={faCodeBranch}
-								/>
-							);
-						})}
+							{followersList.map(info => {
+								return (
+									<FollowerCard
+										name={info.login}
+										img={info.avatar_url}
+										github={info.html_url}
+										files={info.repos_url}
+										iconGH={faGithubSquare}
+										iconB={faCodeBranch}
+									/>
+								);
+							})}
 						</Row>
 					</div>
 				) : (
 					<div>
-						{search.map(info => {
-							return (
-								<FollowerCard
-									name={info.login}
-									img={info.avatar_url}
-									github={info.html_url}
-									files={info.repos_url}
-									/* iconGH={faGithubSquare}
-               iconB={faCodeBranch} */
-								/>
-							);
-						})}
+						<Row>
+							{search.map(info => {
+								return (
+									<FollowerCard
+										name={info.login}
+										img={info.avatar_url}
+										github={info.html_url}
+										files={info.repos_url}
+										iconGH={faGithubSquare}
+										iconB={faCodeBranch}
+									/>
+								);
+							})}
+						</Row>
 					</div>
 				)}
 			</div>

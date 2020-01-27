@@ -5,6 +5,7 @@ import { Image } from 'semantic-ui-react';
 import { Card } from 'reactstrap';
 
 
+
 const UserCard = ({ name, login, img, github, files, area, repoNum, followed, followers, iconGH, iconB }) => {
   
 
@@ -21,7 +22,7 @@ const UserCard = ({ name, login, img, github, files, area, repoNum, followed, fo
           
         <div className='ucicons'>
           <span className='ucspan'><a href={github}><FontAwesomeIcon icon={iconGH} href={github} className='gh'/></a></span>
-          <span className='ucspan'><a href={files}><FontAwesomeIcon icon={iconB} className='branch'/></a></span>
+              <span className='ucspan'><a href={files}><FontAwesomeIcon icon={iconB} className='branch' /></a></span>
           </div>
           
         </div>

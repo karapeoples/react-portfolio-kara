@@ -6,56 +6,51 @@
 
 .App-header{
   background-color: black;
-  min-height: 10vh;
+  min-height: 5vh;
   display: flex;
   align-items: center;
 }
 .logo{
   margin-left: 10%;
-  height: 100px;
+  height: 150px;
 }
 
 nav{
   display: flex;
-  margin-left: -10%;
+   margin-left: 30%;
+   margin-top: -2%;
+}
+
+.bg2{
+  margin-left: 30%;
+  margin-top: -2%;
+}
+.navHistory{
+  display: flex;
   
 }
 
-.link{
-  margin-left: 50%;
-}
 
-.navButton{
-  background: gold;
-  color: maroon ;
-  border: 2px solid maroon;
-  border-radius: 2%;
-  font-size: 20px;
+.coverPage{
+  margin-left: -50%;
 }
-.navButton:hover{
-    background: maroon;
-    color: gold;
-  }
-
   .landWrapper{
     margin-top: 4%;
   }
 .design {
-    position: relative; width: 20%; height: 300px;
-    margin: auto; margin-top: 5%;    
+    position: relative; width: 300px; height: 300px;
+    margin: auto; margin-top: 100px;    
 }
 
- .design > * { position: absolute; height: 100%; width: 100%; }
- .blend > * { position: absolute; height: 100%; width: 100%; }
+.design > *, .blend > * { position: absolute; height: 100%; width: 100%; }
 
 .rotatedBorder {
     box-sizing: border-box; border: 15px maroon solid;
     transform: rotate(45deg);
     box-shadow: 0 0 10px maroon, inset 0 0 20px maroon;
 }
-.coverPage{
-  margin-left: -50%;
-}
+
+
 .grid { display: grid; grid: repeat(2, 1fr) / repeat(2, 1fr); }
 
 [data-white]{ background-color: white; }
@@ -71,17 +66,22 @@ nav{
   font-size: 40px;
   font-family: 'Cinzel Decorative', cursive;
 }
+.imageDiv{
+  width: 75%;
+  margin: 1% auto;
+  height: 75vh;
+}
 .image{
-  width: 50%;
+  width: 75%;
   margin: 1% auto;
   border: 10px groove maroon;
-  height: 50vh;
+  height: 75vh;
 }
 
 .ul{
   display: flex;
   margin-left: -5%;
-  list-style-image: url('./images/bullet.png');
+  list-style-image: url('./images/bullet.png')
 }
 .list{
   margin: 0 auto;

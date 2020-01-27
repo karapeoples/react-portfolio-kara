@@ -7,42 +7,65 @@ import logo from "./images/logo.png";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import GitHub from "./components/git-hub/GitHub";
+import History from './components/history/History';
+import Showcase from './components/git-hub/Showcase';
+import Work from './components/history/Work';
+import Education from './components/history/Education';
+import Volunteer from './components/history/Volunteer';
+import { Button } from 'semantic-ui-react'
+
+const navButton = {
+	background: 'gold',
+	color: 'maroon',
+	border: '2px solid maroon',
+	fontSize: '18px',
+	fontFamily: 'Forum, cursive',
+}
+	
+
+	
 
 
 function App() {
 	return (
 		<div className="App">
 			<header className="App-header">
+				
 				<Link to="/">
 					<img src={logo} alt="lambda-grad" className="logo" />
 				</Link>
 
 				<nav>
-					
+				<Button.Group>
 					<Link to="/about" className="link">
-						<button className='navButton'>About</button>
+						<Button  style={navButton}>About</Button>
 					</Link>
 
 					<Link to="/skills" className="link">
-					<button className='navButton'>Skills</button>
+					<Button style={navButton}>Skills</Button>
 					</Link>
 
 					<Link to="/git-hub" className="link">
-						<button className='navButton'>GitHub</button>
+						<Button style={navButton}>GitHub</Button>
 					</Link>
 
 					<Link to="/contact" className="link">
-						<button className='navButton'>Contact</button>
-					</Link>
-
+						<Button style={navButton}>Contact</Button>
+						</Link>
+					</Button.Group>
 				</nav>
 			</header>
+		   <History />
 			<div>
 				<Route exact path="/" component={Landing} />
 				<Route path="/about" component={About} />
 				<Route path="/skills" component={Skills} />
 				<Route path="/git-hub" component={GitHub} />
 				<Route path="/contact" component={Contact} />
+				<Route path="/workhistory" component={Work} />
+        <Route path="/education" component={Education} />
+        <Route path="/volunteer" component={Volunteer} />
+        <Route path="/showcase" component={Showcase} /> 
 			</div>
 		</div>
 	);
