@@ -20,8 +20,9 @@ const About = () => {
 
   return (
     <Card style={card1}>
-      
-    <Image className="image" src={avatar} alt='Kara R. Peoples' />
+      <div className='imageDiv'>
+        <Image className="image" src={avatar} alt='Kara R. Peoples' />
+      </div>
       <Card.Content>
         <Card.Header><h1 className='aboutH1'>Kara R. Peoples</h1></Card.Header>
         <Card.Meta>
