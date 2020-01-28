@@ -30,7 +30,6 @@ nav{
   
 }
 
-
 .coverPage{
   margin-left: -50%;
 }
@@ -76,6 +75,7 @@ nav{
   margin: 1% auto;
   border: 10px groove maroon;
   height: 75vh;
+  border-radius: 5%;
 }
 
 .ul{
@@ -234,4 +234,13 @@ nav{
    flex-direction: column;
    width: 25%;
    margin: 5% auto;
+ }
+
+ .workCard{
+   font-family: 'Cinzel Decorative', cursive;
+   margin: 1% auto; 
+ }
+
+ .showCase{
+   width: 100%;
  }
