@@ -13,7 +13,9 @@ const Skills = () => {
     width: '80%',
     margin: '1% auto',
     padding: '1%',
-    background: 'black', 
+		background: 'black',
+		border: '5px double gold',
+		borderRadius: '5%'
 }
 const gold = {
   color: 'gold',
