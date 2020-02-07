@@ -2,7 +2,7 @@ import React from "react";
 import programs from "../images/programs.jpeg";
 import languages from "../images/computerlanguages.jpeg";
 import adobe from "../images/otherskills.jpeg";
-import { Card, Image } from 'semantic-ui-react'
+import { Card, CardImg } from 'reactstrap';
 
 let computer = ["Word", "Excel", "PowerPoint", 'VSCode Editor', ];
 let adobeArr = ["Photoshop", "InDesign", "Illustrator", "Bridge"];
@@ -10,7 +10,7 @@ let language = ["HTML", "CSS", "LESS", "JS", "React"];
 const Skills = () => {
 
 	const card1 = {
-    width: '80%',
+    width: '98%',
     margin: '1% auto',
     padding: '1%',
 		background: 'black',
@@ -27,7 +27,7 @@ const gold = {
 
 			<Card style={card1}>
 				<div>
-					<Image className='image'src={languages} alt="computer languages" />
+					<CardImg className='image'src={languages} alt="computer languages" />
 				</div>
 				<div style={gold}>
           <ul className='ulB'>
@@ -41,7 +41,7 @@ const gold = {
 
 			<Card style={card1}>
 				<div>
-					<Image className='image'src={adobe} alt="adobe skills" />
+					<CardImg className='image'src={adobe} alt="adobe skills" />
 				</div>
 				<div style={gold}>
           <ul className='ulB'>
@@ -55,7 +55,7 @@ const gold = {
 
 			<Card style={card1}>
 				<div>
-					<Image className='image' src={programs} alt="computer programs" />
+					<CardImg className='image' src={programs} alt="computer programs" />
 				</div>
 				<div style={gold}>
           <ul className='ulB'>

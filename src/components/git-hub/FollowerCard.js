@@ -11,7 +11,7 @@ const FollowerCard = ({ name, img, github, files, iconGH, iconB }) => {
   
 
   return (
-    <Col lg='4' className='fcContainer'>
+    <Col lg='4' md='12' sm='12' className='fcContainer'>
       <Card style={margin}>
       <div className='back'>
       <div className='imgDiv'>

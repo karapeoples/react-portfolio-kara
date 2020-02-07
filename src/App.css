@@ -1,246 +1,316 @@
 .App {
-  text-align: center; 
-  font-family: 'Vast Shadow', cursive;
+	text-align: center;
+	font-family: "Vast Shadow", cursive;
 }
 
-
-.App-header{
-  background-color: black;
-  min-height: 5vh;
-  display: flex;
-  align-items: center;
+.App-header {
+	background-color: black;
+	min-height: 5vh;
+	display: flex;
+	align-items: center;
+	
 }
-.logo{
-  margin-left: 10%;
-  height: 150px;
-}
-
-nav{
-  display: flex;
-   margin-left: 30%;
-   margin-top: -2%;
+.logo {
+	margin-left: 10%;
+	height: 150px;
 }
 
-.bg2{
-  margin-left: 30%;
-  margin-top: -2%;
-}
-.navHistory{
-  display: flex;
-  
+nav {
+	display: flex;
+	margin-left: 30%;
+	margin-top: -2%;
+	
 }
 
-.coverPage{
-  margin-left: -50%;
+.bg2 {
+	margin-left: 32%;
+	margin-top: -2%;
 }
-  .landWrapper{
-    margin-top: 4%;
-  }
+.navHistory {
+	display: flex;
+}
+
+.coverPage {
+	margin-left: -50%;
+}
+
+.landWrapper {
+	margin-top: 10%;
+}
 .design {
-    position: relative; width: 300px; height: 300px;
-    margin: auto; margin-top: 100px;    
+	position: relative;
+	width: 300px;
+	height: 300px;
+	margin: auto;
+	margin-top: 100px;
 }
 
-.design > *, .blend > * { position: absolute; height: 100%; width: 100%; }
+.design > *,
+.blend > * {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
 
 .rotatedBorder {
-    box-sizing: border-box; border: 15px maroon solid;
-    transform: rotate(45deg);
-    box-shadow: 0 0 10px maroon, inset 0 0 20px maroon;
+	box-sizing: border-box;
+	border: 15px maroon solid;
+	transform: rotate(45deg);
+	box-shadow: 0 0 10px maroon, inset 0 0 20px maroon;
+}
+
+.grid {
+	display: grid;
+	grid: repeat(2, 1fr) / repeat(2, 1fr);
+}
+
+[data-white] {
+	background-color: white;
+}
+
+.blend {
+	mix-blend-mode: multiply;
+}
+
+.coverPage {
+	object-fit: cover;
+}
+
+.design > .coverPage {
+	box-shadow: 0 0 20px #bac3c3;
+}
+
+.aboutH1 {
+	color: gold;
+	font-size: 40px;
+	font-family: "Cinzel Decorative", cursive;
+}
+.imageDiv {
+	width: 75%;
+	margin: 1% auto;
+	height: 75vh;
+}
+.image {
+	width: 75%;
+	margin: 1% auto;
+	border: 10px groove maroon;
+	height: 75vh;
+	border-radius: 5%;
 }
 
 
-.grid { display: grid; grid: repeat(2, 1fr) / repeat(2, 1fr); }
 
-[data-white]{ background-color: white; }
-
-.blend { mix-blend-mode: multiply; }
-
-.coverPage { object-fit: cover; }
-
-.design > .coverPage{box-shadow: 0 0 20px #bac3c3; }
-
-.aboutH1{
-  color: gold;
-  font-size: 40px;
-  font-family: 'Cinzel Decorative', cursive;
+.ul {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -5%;
+	list-style-type: disc;
+	color: gold;
 }
-.imageDiv{
-  width: 75%;
-  margin: 1% auto;
-  height: 75vh;
+.list {
+	margin: 2%;
 }
-.image{
-  width: 75%;
-  margin: 1% auto;
-  border: 10px groove maroon;
-  height: 75vh;
-  border-radius: 5%;
+.ulB {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-left: -5%;
+	list-style-type: disc;
+	color: gold;
 }
 
-.ul{
-  display: flex;
-  margin-left: -5%;
-  list-style-image: url('./images/bullet.png')
-}
-.list{
-  margin: 0 auto;
-}
-.ulB{
-  display: flex;
-  margin-left: -5%;
-  list-style-image: url('./images/bullet.png');
+.userCardSection {
+	width: 60%;
+	margin: 0 auto;
+	font-family: "Cinzel Decorative", cursive;
+	font-size: 25px;
+	width: 80%;
+	color: gold;
 }
 
 
+.fcContainer {
+	font-family: "Forum", cursive;
+	font-size: 25px;
+	/* width: 33%; */
+	margin: 0 auto;
+	color: gold;
+}
+.fctitle {
+	font-family: "Forum", cursive;
+	font-size: 25px;
+	width: 75%;
+	margin: 0 auto;
+	color: gold;
+}
 
-.userCardSection{
-  width: 60%;
-  margin: 0 auto;
-  font-family: 'Cinzel Decorative', cursive;
-  font-size: 25px;
-  width: 80%;
-  color: gold;
-   
- }
- 
- .fcContainer{
-   font-family: 'Forum', cursive;
-   font-size: 25px;
-   width: 33%;
-   margin: .0 auto;
-   color: gold;
- }
- .fctitle{
-   font-family: 'Forum', cursive;
-   font-size: 25px;
-   width: 75%;
-   margin: 0 auto;
-   color: gold;
-   
- }
- 
- .imgDiv{
-   display: flex;
-   justify-content: center;
-   margin: 0 auto;
-   font-size: 250%;
-   width: 75%;
-   
- }
- 
- form{
-   margin: 2%;
-   background: gold;
-   padding: 2%;
-   color: maroon;
-   text-align: center;
- }
- .frame{
-   border : 5px solid white;
-   margin: 2%;
-   padding: 1%;
-   
- }
- .font{
-   font-family: 'Vast Shadow', cursive;
- }
- .avatar{
-   width: 98%;
- }
- 
- .ucicons{
-   display: flex;
-   flex-direction: row;
-   justify-content: flex-end;
-   width: 25%;
-   margin-left: 35%;
-   margin-top: -5%;
- }
- 
- .ficons{
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-end;
-   width: 25%;
-   margin-left: 55%;
-   margin-top: -10%;
-   
- }
- .ucspan{
-   margin: 5%;
-   font-size: 35px;
- }
- 
- .fspan{
-   margin: 5%;
-   font-size: 35px;
- }
- 
- .gh{
-   color: black;
-   background: white;
-   border: 2px solid black;
-   padding: 2%;
-   
- }
- 
- .branch{
-   color: black;
-   background: white;
-   border: 2px solid black;
-   padding: 2%;
- }
- 
- .img {
-   border : 5px solid white;
-   margin: 0 auto;
-   
- }
- .border{
-   background: black;
-   padding: 1%;
- }
- 
- .back{
-   background:maroon;
-   border: 3px groove black;
- }
- 
- .bullet {
-   list-style-image: url('./images/bullet.png');
-   text-align: justify;
-   
- }
- .ulA{
-   margin: 0 auto;
-   width: 25%;
-   
- }
- .userCalendar{
-   border: 3px solid black;
-   width: 75%;
-   margin: 1% auto;
- }
+.imgDiv {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	font-size: 250%;
+	width: 75%;
+}
 
- .followerCalendar{
-  border: 3px solid black;
-  width: 90%;
-  margin: 1% auto;
- }
+form {
+	margin: 2%;
+	background: gold;
+	padding: 2%;
+	color: maroon;
+	text-align: center;
+}
+.frame {
+	border: 5px solid white;
+	margin: 2%;
+	padding: 1%;
+}
+.font {
+	font-family: "Vast Shadow", cursive;
+}
+.avatar {
+	width: 98%;
+}
 
- .contact {
-   display: flex;
-   flex-direction: column;
-   width: 25%;
-   margin: 5% auto;
- }
+.ucicons {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	width: 25%;
+	margin-left: 35%;
+	margin-top: -5%;
+}
 
- .workCard{
-   font-family: 'Cinzel Decorative', cursive;
-   margin: 1% auto; 
- }
+.ficons {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 25%;
+	margin-left: 55%;
+	margin-top: -10%;
+}
+.ucspan {
+	margin: 5%;
+	font-size: 35px;
+}
 
- .showCase{
-   width: 100%;
- }
+.fspan {
+	margin: 5%;
+	font-size: 35px;
+}
+
+.gh {
+	color: black;
+	background: white;
+	border: 2px solid black;
+	padding: 2%;
+}
+
+.branch {
+	color: black;
+	background: white;
+	border: 2px solid black;
+	padding: 2%;
+}
+
+.img {
+	border: 5px solid white;
+	margin: 0 auto;
+}
+.border {
+	background: black;
+	padding: 1%;
+}
+
+.back {
+	background: maroon;
+	border: 3px groove black;
+}
+
+.bullet {
+	list-style-image: url("./images/bullet.png");
+	text-align: justify;
+}
+.ulA {
+	margin: 0 auto;
+	width: 25%;
+}
+.userCalendar {
+	border: 3px solid black;
+	width: 75%;
+	margin: 1% auto;
+}
+
+.followerCalendar {
+	border: 3px solid black;
+	width: 90%;
+	margin: 1% auto;
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+	margin: 5% auto;
+}
+
+.workCard {
+	font-family: "Cinzel Decorative", cursive;
+	margin: 1% auto;
+}
+
+.showCase {
+	width: 100%;
+}
+
+
+
+@media(max-width: 800px){
+	.userCardSection{
+	margin: 0 auto;
+	font-size: 20px;
+	width: 98%;
+	
+	}
+
+	nav {
+		
+		margin-left: 10%;
+		
+		
+	}
+	.bg2 {
+		margin-left: 23%;
+		
+	}
+}
+
+@media(max-width: 500px){
+	.userCardSection{
+	
+	margin: 0 auto;
+	
+	font-size: 12px;
+	width: 98%;
+	
+	}
+
+	.ucicons{
+		margin-left: 45%;
+	}
+	nav {
+		
+		margin-left: 7%;
+		
+		
+	}
+	.bg2 {
+		margin-left: 30%;
+		
+	}
+	.section{
+	margin: 0 auto;
+	font-size: 12px;
+}
+}
+
+

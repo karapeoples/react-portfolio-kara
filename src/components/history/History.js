@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Button } from 'semantic-ui-react';
+import { ButtonGroup, Button } from "reactstrap";
 
 const navButton = {
 	background: 'gold',
@@ -17,7 +17,7 @@ return(
     <header className="App-header">
       <section className="bg2">
       <nav className='navHistory'>
-					<Button.Group>
+					<ButtonGroup >
         <Link to="/workhistory" className="link2">
           <Button style={navButton}>Work</Button>
         </Link>
@@ -31,7 +31,7 @@ return(
         </Link>
 
           <Link to='/showcase' className='link2'><Button style={navButton}>Showcase</Button></Link>
-        </Button.Group>
+        </ButtonGroup>
         </nav>
       </section>
     </header>
