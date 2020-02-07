@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import GitHubCalendar from 'react-github-calendar';
 import { Image } from 'semantic-ui-react';
-import { Card } from 'reactstrap';
+import { Card} from 'reactstrap';
 
 
 

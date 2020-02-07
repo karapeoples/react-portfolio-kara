@@ -4,6 +4,7 @@ import { Button, Icon } from 'semantic-ui-react'
 const Contact = () => {
   const margin ={
     margin: "5%",
+    padding: '2%',
   }
   const handleClick = (e) => {
     e.preventDefault()

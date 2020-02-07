@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Grid } from 'semantic-ui-react';
+import { Card, Row, Col, CardBody} from 'reactstrap';
 
 
 const card1 = {
@@ -25,34 +25,34 @@ const Volunteer = () => {
   return (
     <div>
       <h1>Volunteer Work</h1>
-      
-      <Grid.Column>
-        <div>
-         <Grid.Row> 
+      <div>
+      <Row>
+        
+         <Col lg='4'> 
         <div className='workCard' >
               <Card style={card1}>
                 <h1 style={gold2}>Lambda Tutor</h1>
                 <span style={divide}/>
-        <Card.Content style={gold}>
+        <CardBody style={gold}>
         <h3 >Current</h3>
         <p>Duties: I have a peer-coding group I lead. I tutor them in the subjects and peer code and learn from them in the subjects I am currently studying. I also help out with peer-coding group one course behind me. </p>
-        </Card.Content>
+        </CardBody>
           </Card>
             </div>
-            
+          </Col> 
+          <Col lg='4'>
           <div className='workCard'>
       <Card style={card1}>
                 <h1 style={gold2}>In2Books</h1>
                 <span style={divide}/>
-        <Card.Content style={gold}>
+        <CardBody style={gold}>
         <p>Duties: In2Books.org Penpal program to help students learn to read. Correspondence and Questions about assigned books for their class which I read when sent to me. </p>
-        </Card.Content>
+        </CardBody>
           </Card>
          </div>
-          </Grid.Row>
-        </div>    
-      </Grid.Column>
-      
+           </Col>
+      </Row>
+      </div>
        </div>
   )
 }
