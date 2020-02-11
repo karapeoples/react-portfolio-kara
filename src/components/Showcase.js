@@ -1,10 +1,10 @@
 import React from "react";
 import { Card, Col, Row, Button, CardImg, CardBody } from "reactstrap";
-import MedCab from "../../images/MedCab.JPG";
-import npod from "../../images/npod.JPG";
-import keepSavvy from "../../images/keepSavvy.JPG";
-import ff from "../../images/ff.JPG";
-import errands from "../../images/errands.JPG";
+import MedCab from "../images/MedCab.JPG";
+import npod from "../images/npod.JPG";
+import keepSavvy from "../images/keepSavvy.JPG";
+import ff from "../images/ff.JPG";
+import errands from "../images/errands.JPG";
 const card1 = {
 	height: "450px",
 	padding: "1%",
