@@ -18,8 +18,6 @@ const navButton = {
 	fontFamily: "Forum, cursive",
 };
 
-
-
 function App() {
 	return (
 		<div className="App">
@@ -29,25 +27,25 @@ function App() {
 				</Link>
 
 				<nav>
-						<Link to="/showcase" className="link">
-							<Button style={navButton}>Showcase</Button>
-						</Link>
+					<Link to="/showcase" className="link">
+						<Button style={navButton}>Showcase</Button>
+					</Link>
 
-						<Link to="/about" className="link">
-							<Button style={navButton}>About</Button>
-						</Link>
+					<Link to="/about" className="link">
+						<Button style={navButton}>About</Button>
+					</Link>
 
-						<Link to="/skills" className="link">
-							<Button style={navButton}>Skills</Button>
-						</Link>
+					<Link to="/skills" className="link">
+						<Button style={navButton}>Skills</Button>
+					</Link>
 
-						<Link to="/git-hub" className="link">
-							<Button style={navButton}>GitHub</Button>
-						</Link>
+					<Link to="/git-hub" className="link">
+						<Button style={navButton}>GitHub</Button>
+					</Link>
 
-						<Link to="/contact" className="link">
-							<Button style={navButton}>Contact</Button>
-						</Link>
+					<Link to="/contact" className="link">
+						<Button style={navButton}>Contact</Button>
+					</Link>
 				</nav>
 			</header>
 			<div>

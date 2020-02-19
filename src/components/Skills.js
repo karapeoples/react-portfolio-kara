@@ -6,7 +6,7 @@ import { Card, CardImg } from 'reactstrap';
 
 let computer = ["Word", "Excel", "PowerPoint", 'VSCode Editor', ];
 let adobeArr = ["Photoshop", "InDesign", "Illustrator", "Bridge"];
-let language = ["HTML", "CSS", "LESS", "JS", "React"];
+let language = ["HTML", "CSS", "LESS", "JS", "React", "Redux"];
 const Skills = () => {
 
 	const card1 = {
