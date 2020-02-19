@@ -5,6 +5,7 @@ import npod from "../images/npod.JPG";
 import keepSavvy from "../images/keepSavvy.JPG";
 import ff from "../images/ff.JPG";
 import errands from "../images/errands.JPG";
+import Museum from "../images/artmuseum.JPG";
 const card1 = {
 	height: "450px",
 	padding: "1%",
@@ -25,6 +26,15 @@ const navButton = {
 	width: "75%",
 	margin: "0 auto",
 };
+const navButton2 = {
+	background: "gold",
+	color: "maroon",
+	border: "2px solid maroon",
+	fontSize: "18px",
+	fontFamily: "Forum, cursive",
+	width: "15%",
+	margin: "0 auto",
+};
 const divide = {
 	border: "1px solid gold",
 };
@@ -37,10 +47,12 @@ const Showcase = () => {
 	return (
 		<div>
 			<h1>Showcase</h1>
-<div>
-			<Row>
-				<Col lg="4">
-					
+			<Button style={navButton2} href="https://codestats.net/users/kararpeoples">
+				Code Stats
+			</Button>
+			<div>
+				<Row>
+					<Col lg="4">
 						<div className="workCard">
 							<Card style={card1}>
 								<Button style={navButton} href="https://errandlist.now.sh/">
@@ -59,8 +71,8 @@ const Showcase = () => {
 							</Card>
 						</div>
 					</Col>
-					
-					<Col lg='4'>
+
+					<Col lg="4">
 						<div className="workCard">
 							<Card style={card1}>
 								<Button style={navButton} href="https://fishfriendsapp.netlify.com/">
@@ -79,8 +91,8 @@ const Showcase = () => {
 							</Card>
 						</div>
 					</Col>
-					
-					<Col lg='4'>
+
+					<Col lg="4">
 						<div className="workCard">
 							<Card style={card1}>
 								<Button style={navButton} href="https://elegant-aryabhata-cdd64e.netlify.com/index.html">
@@ -98,9 +110,9 @@ const Showcase = () => {
 								</Button>
 							</Card>
 						</div>
-						</Col>
+					</Col>
 
-						<Col lg='4'>
+					<Col lg="4">
 						<div className="workCard">
 							<Card style={card1}>
 								<Button style={navButton} href="https://karanpod.netlify.com/">
@@ -118,9 +130,9 @@ const Showcase = () => {
 								</Button>
 							</Card>
 						</div>
-						</Col>
+					</Col>
 
-						<Col lg='4'>
+					<Col lg="4">
 						<div className="workCard">
 							<Card style={card1}>
 								<Button style={navButton} href="https://med-cabinet.netlify.com/">
@@ -138,7 +150,27 @@ const Showcase = () => {
 								</Button>
 							</Card>
 						</div>
-				</Col>
+					</Col>
+
+					<Col lg="4">
+						<div className="workCard">
+							<Card style={card1}>
+								<Button style={navButton} href="">
+									Mini Harvard Art Museum
+								</Button>
+								<span style={divide} />
+								<CardBody style={gold}>
+									<div className="showCase">
+										<CardImg src={Museum} alt="project snapshot" style={height} />
+									</div>
+								</CardBody>
+								<span style={divide} />
+								<Button style={navButton} href="https://github.com/karapeoples/React-Redux-App">
+									Repo
+								</Button>
+							</Card>
+						</div>
+					</Col>
 				</Row>
 			</div>
 		</div>
