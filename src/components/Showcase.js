@@ -10,7 +10,7 @@ import GT from '../images/goldentutors.JPG'
 import MiniJournal from '../images/minijournals.JPG'
 
 const card1 = {
-	height: '450px',
+	height: '550px',
 	padding: '1%',
 	background: 'black',
 	border: '5px double gold',
