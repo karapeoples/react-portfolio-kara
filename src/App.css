@@ -1,10 +1,17 @@
+:root {
+	--bg: #1f5c70;
+	--clean: #e3d6c9;
+	--font-a: 'Sofia', cursive;
+	--font-b: 'Quicksand', sans-serif;
+	--font-c: 'Poiret One', cursive
+}
+
 .App {
 	text-align: center;
-	font-family: "Vast Shadow", cursive;
 }
 
 .App-header {
-	background-color: black;
+	background-color: var(--bg);
 	min-height: 5vh;
 	display: flex;
 	align-items: center;
@@ -14,9 +21,49 @@
 	height: 150px;
 }
 
-nav {
-	margin-left: 32.5%;
+
+.bm-item {
+	font-family: var(--font-c);
+	font-size: 30px;
+	display: inline-block;
+	text-decoration: none;
+	margin-bottom: 10px;
+	color: var(--clean);
 }
+
+.bm-item:hover {
+	text-decoration: none;
+	color: var(--clean);
+	border: 1px solid var(--clean);
+	border-radius: 4px;
+}
+
+.bm-burger-button {
+	position: absolute;
+	width: 36px;
+	height: 30px;
+	right: 36px;
+}
+
+.bm-burger-bars {
+	background: var(--clean);
+}
+
+.bm-cross-button {
+	height: 24px;
+	width: 24px;
+}
+
+.bm-cross {
+	background: var(--clean);
+}
+
+.bm-menu {
+	background: var(--bg);
+	padding: 2.5% 30% 0;
+	font-size: 1.15em;
+}
+
 
 .bg2 {
 	margin-left: 32%;
@@ -29,6 +76,11 @@ nav {
 
 .landWrapper {
 	margin-top: 10%;
+	
+}
+.landInfo {
+	font-family: var(--font-a);
+	font-size: 45px;
 }
 .design {
 	position: relative;
@@ -47,9 +99,9 @@ nav {
 
 .rotatedBorder {
 	box-sizing: border-box;
-	border: 15px maroon solid;
+	border: 15px var(--bg) solid;
 	transform: rotate(45deg);
-	box-shadow: 0 0 10px maroon, inset 0 0 20px maroon;
+	box-shadow: 0 0 10px var(--bg), inset 0 0 20px var(--bg);
 }
 
 .grid {
@@ -72,66 +124,57 @@ nav {
 .design > .coverPage {
 	box-shadow: 0 0 20px #bac3c3;
 }
-
+.left-right{
+	display: flex;
+	flex-direction: row-reverse;
+}
 .aboutH1 {
-	color: gold;
 	font-size: 40px;
-	font-family: "Cinzel Decorative", cursive;
+	font-family: var(--font-c)
 }
 .imageDiv {
-	width: 75%;
+	width: 50%;
 	margin: 1% auto;
-	height: 75vh;
 }
+
 .image {
 	width: 75%;
 	margin: 1% auto;
-	border: 10px groove maroon;
+	border: 10px groove var(--bg);
 	height: 75vh;
 	border-radius: 5%;
 }
-
-.ul {
-	display: flex;
-	flex-wrap: wrap;
-	margin-left: -5%;
-	list-style-type: disc;
-	color: gold;
+.lists{
+	font-size: 15px;
+	font-family: var(--font-b)
 }
-.list {
-	margin: 5%;
-}
-.ulB {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin-left: -5%;
-	list-style-type: disc;
-	color: gold;
+.about-p{
+	font-size: 25px;
+	font-family: var(--font-c)
 }
 
 .userCardSection {
 	width: 60%;
 	margin: 0 auto;
-	font-family: "Cinzel Decorative", cursive;
+	font-family: var(--font-b);
 	font-size: 25px;
 	width: 80%;
-	color: gold;
+	color: var(--clean);
 }
 
 .fcContainer {
-	font-family: "Forum", cursive;
+	font-family: var(--font-b);
 	font-size: 25px;
 	/* width: 33%; */
 	margin: 0 auto;
-	color: gold;
+	color: var(--clean);
 }
 .fctitle {
-	font-family: "Forum", cursive;
+	font-family: var(--font-b);
 	font-size: 25px;
 	width: 75%;
 	margin: 0 auto;
-	color: gold;
+	color: var(--clean);
 }
 
 .imgDiv {
@@ -144,18 +187,18 @@ nav {
 
 form {
 	margin: 2%;
-	background: gold;
+	background: var(--clean);
 	padding: 2%;
-	color: maroon;
+	color: var(--bg);
 	text-align: center;
 }
 .frame {
-	border: 5px solid white;
+	border: 5px solid var(--bg);
 	margin: 2%;
 	padding: 1%;
 }
 .font {
-	font-family: "Vast Shadow", cursive;
+	font-family: var(--font-c)
 }
 .avatar {
 	width: 98%;
@@ -189,35 +232,34 @@ form {
 }
 
 .gh {
-	color: black;
-	background: white;
-	border: 2px solid black;
+	color: var(--clean);
+	background: var(--bg);
+	border: 2px solid var(--clean);
 	padding: 2%;
 }
 
 .branch {
-	color: black;
-	background: white;
-	border: 2px solid black;
+	color: var(--clean);
+	background: var(--bg);
+	border: 2px solid var(--clean);
 	padding: 2%;
 }
 
 .img {
-	border: 5px solid white;
+	border: 5px solid var(--bg);
 	margin: 0 auto;
 }
 .border {
-	background: black;
+	background: var(--clean);
 	padding: 1%;
 }
 
 .back {
-	background: maroon;
+	background: var(--bg);
 	border: 3px groove black;
 }
 
 .bullet {
-	list-style-image: url("./images/bullet.png");
 	text-align: justify;
 }
 .ulA {
@@ -225,13 +267,13 @@ form {
 	width: 25%;
 }
 .userCalendar {
-	border: 3px solid black;
+	border: 3px solid var(--clean);
 	width: 75%;
 	margin: 1% auto;
 }
 
 .followerCalendar {
-	border: 3px solid black;
+	border: 3px solid var(--clean);
 	width: 90%;
 	margin: 1% auto;
 }
@@ -244,7 +286,7 @@ form {
 }
 
 .workCard {
-	font-family: "Cinzel Decorative", cursive;
+	font-family: 'Cinzel Decorative', cursive;
 	margin: 1% auto;
 }
 
@@ -259,9 +301,6 @@ form {
 		width: 98%;
 	}
 
-	nav {
-		margin-left: 10%;
-	}
 	.bg2 {
 		margin-left: 23%;
 	}

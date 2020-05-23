@@ -12,34 +12,35 @@ import MiniJournal from '../images/minijournals.JPG'
 const card1 = {
 	height: '525px',
 	padding: '1%',
-	background: 'black',
-	border: '5px double gold',
+	background: '#1f5c70',
+	border: '5px double #e3d6c9',
 	borderRadius: '5%',
 }
 const gold = {
-	color: 'gold',
+	color: '#e3d6c9',
 	fontSize: '18px',
+	fontFamily: 'Quicksand, sans-serif'
 }
 const navButton = {
-	background: 'gold',
-	color: 'maroon',
-	border: '2px solid maroon',
+	background: '#e3d6c9',
+	color: '#1f5c70',
+	border: '2px solid #1f5c70',
 	fontSize: '18px',
-	fontFamily: 'Forum, cursive',
+	fontFamily: 'Poiret One, cursive',
 	width: '75%',
 	margin: '0 auto',
 }
 const navButton2 = {
-	background: 'gold',
-	color: 'maroon',
-	border: '2px solid maroon',
+	background: '#e3d6c9',
+	color: '#1f5c70',
+	border: '2px solid #1f5c70',
 	fontSize: '18px',
-	fontFamily: 'Forum, cursive',
+	fontFamily: 'Poiret One, cursive',
 	width: '15%',
 	margin: '0 auto',
 }
 const divide = {
-	border: '1px solid gold',
+	border: '1px solid #e3d6c9',
 }
 
 const height = {
