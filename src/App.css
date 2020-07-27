@@ -76,7 +76,7 @@
 
 .landWrapper {
 	margin-top: 10%;
-	
+
 }
 .landInfo {
 	font-family: var(--font-a);
@@ -124,10 +124,7 @@
 .design > .coverPage {
 	box-shadow: 0 0 20px #bac3c3;
 }
-.left-right{
-	display: flex;
-	flex-direction: row-reverse;
-}
+
 .aboutH1 {
 	font-size: 40px;
 	font-family: var(--font-c)
@@ -146,7 +143,9 @@
 }
 .lists{
 	font-size: 15px;
-	font-family: var(--font-b)
+	font-family: var(--font-b);
+	display:flex;
+	justify-content: center;
 }
 .about-p{
 	font-size: 25px;
