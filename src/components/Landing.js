@@ -1,9 +1,9 @@
 import React from 'react';
-import coverPage from '../images/coverPage.jpg';
+import coverPage from '../images/avatar.jpg';
 
 
 const Landing = () => {
-  
+
 
   return (
 			<div>
@@ -29,7 +29,6 @@ const Landing = () => {
 						</div>
 					</div>
 				</div>
-				<br />
 				<section className='landWrapper'>
 					<h1 className='landInfo'>Kara R. Peoples</h1>
 				</section>

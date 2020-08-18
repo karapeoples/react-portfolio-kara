@@ -141,6 +141,11 @@
 	height: 75vh;
 	border-radius: 5%;
 }
+.left-right{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 2%;
+}
 .lists{
 	font-size: 15px;
 	font-family: var(--font-b);
@@ -148,6 +153,7 @@
 	justify-content: center;
 }
 .about-p{
+	width: 48%;
 	font-size: 25px;
 	font-family: var(--font-c)
 }
