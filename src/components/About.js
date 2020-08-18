@@ -4,11 +4,11 @@ import { Accordion, Icon } from 'semantic-ui-react'
 
 let oSkills = ['Fast Learner', 'Good Attitude', 'Friendly', 'Hard-Worker', 'Honest', "Creative"]
 let computer = ['Word', 'Excel', 'PowerPoint', 'VSCode Editor','Photoshop', 'InDesign', 'Illustrator', 'Bridge']
-let language = ['HTML', 'CSS', 'LESS', 'JS', 'React', 'Redux']
+let language = ['HTML', 'CSS', 'LESS', 'JS', 'React', 'Redux', 'NodeJS', 'Express', 'SQLite', 'PostgreSQL', 'Knex', 'Python']
 
 
 const About = () => {
-const [acc , setAcc]= useState({})
+const [acc , setAcc]= useState({activeIndex:0})
 const { activeIndex } = acc
 
 const handleClick = (e, titleProps) => {
@@ -23,15 +23,10 @@ const handleClick = (e, titleProps) => {
   return (
 			<section className='section'>
 				<span className='left-right'>
-					<div className='imageDiv'>
-						<img className='image' src={avatar} alt='Kara R. Peoples' />
-						<h1 class='aboutH1'>Kara R. Peoples</h1>
-					</div>
-
 					<section className='lists'>
 						<Accordion styled>
 							<Accordion.Title class='active title' active={activeIndex === 0} index={0} onClick={handleClick}>
-								I am <Icon name='dropdown' />
+								I am a<Icon name='dropdown' />
 							</Accordion.Title>
 							<Accordion.Content active={activeIndex === 0}>
 								<ul>
@@ -41,7 +36,7 @@ const handleClick = (e, titleProps) => {
 								</ul>
 							</Accordion.Content>
 							<Accordion.Title active={activeIndex === 1} index={1} onClick={handleClick}>
-								A Full Stack Web Developer
+								Full Stack Web Developer
 								<Icon name='dropdown' />
 							</Accordion.Title>
 							<Accordion.Content active={activeIndex === 1}>
@@ -64,7 +59,7 @@ const handleClick = (e, titleProps) => {
 							</Accordion.Content>
 						</Accordion>
 					</section>
-				</span>
+
 
 				<p className='about-p'>
 					Being Disabled has taught me to appreciate the social experience that a job brings, while being thankful for being
@@ -75,6 +70,7 @@ const handleClick = (e, titleProps) => {
 					programming skills, with an education at Lambda School which provides much guided learning and project apps that
 					could become marketable someday. Please checkout my GitHub Link to see all my progress and projects.
 				</p>
+			</span>
 			</section>
 		)
 }
