@@ -1,13 +1,13 @@
 import React from 'react'
 import { Card, Col, Row, Button, CardImg, CardBody } from 'reactstrap'
 import MedCab from '../images/MedCab.JPG'
-import npod from '../images/npod.JPG'
 import keepSavvy from '../images/keepSavvy.JPG'
 import ff from '../images/ff.JPG'
-import errands from '../images/errands.JPG'
-import Museum from '../images/artmuseum.JPG'
 import GT from '../images/goldentutors.JPG'
-import MiniJournal from '../images/minijournals.JPG'
+import SFR from '../images/SFR.JPG'
+import TH from '../images/TH.JPG'
+import CM from '../images/CM.JPG'
+
 
 const card1 = {
 	height: '525px',
@@ -59,90 +59,23 @@ const Showcase = () => {
 					<Col lg='4'>
 						<div className='workCard'>
 							<Card style={card1}>
-								<Button style={navButton} href='https://goldentutors.netlify.com/'>
-									Golden Tutors
+								<Button style={navButton} href='https://med-cabinet.netlify.com/'>
+									Med-Cabinet
 								</Button>
 								<span style={divide} />
 								<CardBody style={gold}>
 									<div className='showCase'>
-										<CardImg src={GT} alt='project snapshot' style={height} />
+										<CardImg src={MedCab} alt='project snapshot' style={height} />
 									</div>
-									<p>Advanced React and State Management</p>
+									<p>Responsible for HTML and LESS Static Landing Page</p>
 								</CardBody>
 								<span style={divide} />
-								<Button style={navButton} href='https://github.com/BW-SchoolInTheCloud1/FrontEnd'>
+								<Button style={navButton} href='https://github.com/med-cabinet'>
 									Repo
 								</Button>
 							</Card>
 						</div>
 					</Col>
-
-					<Col lg='4'>
-						<div className='workCard'>
-							<Card style={card1}>
-								<Button style={navButton} href='https://me-journal.kararpeoples.now.sh/'>
-									MiddleEarth Mini-Journals
-								</Button>
-								<span style={divide} />
-								<CardBody style={gold}>
-									<div className='showCase'>
-										<CardImg src={MiniJournal} alt='project snapshot' style={height} />
-									</div>
-									<p>All My Work but the Provided DB</p>
-								</CardBody>
-								<span style={divide} />
-								<Button style={navButton} href='https://me-journal.herokuapp.com'>
-									Published BackEnd
-								</Button>
-								<Button style={navButton} href='https://github.com/karapeoples/node-api3-project'>
-									Repo
-								</Button>
-							</Card>
-						</div>
-					</Col>
-
-					<Col lg='4'>
-						<div className='workCard'>
-							<Card style={card1}>
-								<Button style={navButton} href='https://errandlist.now.sh/'>
-									ToDoList
-								</Button>
-								<span style={divide} />
-								<CardBody style={gold}>
-									<div className='showCase'>
-										<CardImg src={errands} alt='project snapshot' style={height} />
-									</div>
-									<p>All Work is Mine</p>
-								</CardBody>
-								<span style={divide} />
-								<Button style={navButton} href='https://github.com/karapeoples/React-Todo'>
-									Repo
-								</Button>
-							</Card>
-						</div>
-					</Col>
-
-					<Col lg='4'>
-						<div className='workCard'>
-							<Card style={card1}>
-								<Button style={navButton} href='https://fishfriendsapp.netlify.com/'>
-									Fish Friends
-								</Button>
-								<span style={divide} />
-								<CardBody style={gold}>
-									<div className='showCase'>
-										<CardImg src={ff} alt='project snapshot' style={height} />
-										<p>Did the Fishing Spots API Call & Style for React</p>
-									</div>
-								</CardBody>
-								<span style={divide} />
-								<Button style={navButton} href='https://github.com/Fish-Friends-Build'>
-									Repo
-								</Button>
-							</Card>
-						</div>
-					</Col>
-
 					<Col lg='4'>
 						<div className='workCard'>
 							<Card style={card1}>
@@ -163,64 +96,101 @@ const Showcase = () => {
 							</Card>
 						</div>
 					</Col>
-
 					<Col lg='4'>
 						<div className='workCard'>
 							<Card style={card1}>
-								<Button style={navButton} href='https://karanpod.netlify.com/'>
-									NPOD
+								<Button style={navButton} href='https://fishfriendsapp.netlify.com/'>
+									Fish Friends
 								</Button>
 								<span style={divide} />
 								<CardBody style={gold}>
 									<div className='showCase'>
-										<CardImg src={npod} alt='project snapshot' style={height} />
+										<CardImg src={ff} alt='project snapshot' style={height} />
+										<p>Did the Fishing Spots API Call & Style for React</p>
 									</div>
-									<p>All My Work</p>
 								</CardBody>
 								<span style={divide} />
-								<Button style={navButton} href='https://github.com/karapeoples/nasa-photo-of-the-day'>
+								<Button style={navButton} href='https://github.com/Fish-Friends-Build'>
 									Repo
 								</Button>
 							</Card>
 						</div>
 					</Col>
-
 					<Col lg='4'>
 						<div className='workCard'>
 							<Card style={card1}>
-								<Button style={navButton} href='https://med-cabinet.netlify.com/'>
-									Med-Cabinet
+								<Button style={navButton} href='https://goldentutors.netlify.com/'>
+									Golden Tutors
 								</Button>
 								<span style={divide} />
 								<CardBody style={gold}>
 									<div className='showCase'>
-										<CardImg src={MedCab} alt='project snapshot' style={height} />
+										<CardImg src={GT} alt='project snapshot' style={height} />
 									</div>
-									<p>Responsible for HTML and LESS Static Landing Page</p>
+									<p>Advanced React and State Management</p>
 								</CardBody>
 								<span style={divide} />
-								<Button style={navButton} href='https://github.com/med-cabinet'>
+								<Button style={navButton} href='https://github.com/BW-SchoolInTheCloud1/FrontEnd'>
 									Repo
 								</Button>
 							</Card>
 						</div>
 					</Col>
-
 					<Col lg='4'>
 						<div className='workCard'>
 							<Card style={card1}>
-								<Button style={navButton} href='https://react-redux-app-ten.now.sh/'>
-									Mini Harvard Art Museum
+								<Button style={navButton} href='https://sfr-pearl.vercel.app/'>
+									Secret Family Recipes
 								</Button>
 								<span style={divide} />
 								<CardBody style={gold}>
 									<div className='showCase'>
-										<CardImg src={Museum} alt='project snapshot' style={height} />
-										<p>All my work</p>
+										<CardImg src={SFR} alt='project snapshot' style={height} />
 									</div>
+									<p>Advanced React and State Management</p>
 								</CardBody>
 								<span style={divide} />
-								<Button style={navButton} href='https://github.com/karapeoples/React-Redux-App'>
+								<Button style={navButton} href='https://github.com/karapeoples/cherished-recipes-fe'>
+									Repo
+								</Button>
+							</Card>
+						</div>
+					</Col>
+					<Col lg='4'>
+						<div className='workCard'>
+							<Card style={card1}>
+								<Button style={navButton} href='https://optimistic-chandrasekhar-c6d265.netlify.app/'>
+									Troll Hub
+								</Button>
+								<span style={divide} />
+								<CardBody style={gold}>
+									<div className='showCase'>
+										<CardImg src={TH} alt='project snapshot' style={height} />
+									</div>
+									<p>Consumed Data Science API and Built RestAPI</p>
+								</CardBody>
+								<span style={divide} />
+								<Button style={navButton} href='https://github.com/Build-Week-SaltiestHackerNewsTrolls2/back-end'>
+									Repo
+								</Button>
+							</Card>
+						</div>
+					</Col>
+					<Col lg='4'>
+						<div className='workCard'>
+							<Card style={card1}>
+								<Button style={navButton} href='https://co-make.chitowncoder.vercel.app/'>
+									Co-Make
+								</Button>
+								<span style={divide} />
+								<CardBody style={gold}>
+									<div className='showCase'>
+										<CardImg src={CM} alt='project snapshot' style={height} />
+									</div>
+									<p>Built RestAPI and Helped Guide React Portion</p>
+								</CardBody>
+								<span style={divide} />
+								<Button style={navButton} href='https://github.com/karapeoples/be_cm'>
 									Repo
 								</Button>
 							</Card>
