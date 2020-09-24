@@ -20,6 +20,7 @@ const Contact = () => {
 				<Button target='_blank' rel="noopener noreferrer" color='linkedin' style={margin} href={linkedIn}>
 					<Icon name='linkedin' /> LinkedIn
 				</Button>
+			{/* no prevent default on email hrefs */}
 				<Button  color='teal' style={margin} href={'mailTo: kararpeoples@yahoo.com'}>
 					<Icon name='mail square' />
 					kararpeoples@yahoo.com
