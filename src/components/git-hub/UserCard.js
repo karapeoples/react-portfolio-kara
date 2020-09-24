@@ -14,11 +14,11 @@ const UserCard = ({ name, login, img, github, files, area, repoNum, followed, fo
 							<span className="border">
 								<Image src={img} alt="avatar" avatar className="img" />
 							</span>
-							<span>
+
+						</div>
+<span>
 								<h1 className="userCardSection">{name}</h1>
 							</span>
-						</div>
-
 						<div className="ucicons">
 							<span className="ucspan">
 								<a href={github}>

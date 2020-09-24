@@ -182,14 +182,6 @@
 	color: var(--clean);
 }
 
-.imgDiv {
-	display: flex;
-	justify-content: center;
-	margin: 0 auto;
-	font-size: 250%;
-	width: 75%;
-}
-
 form {
 	margin: 2%;
 	background: var(--clean);
@@ -211,20 +203,18 @@ form {
 
 .ucicons {
 	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
+
 	width: 25%;
-	margin-left: 35%;
-	margin-top: -5%;
+	justify-content: center;
+	margin: 0 auto;
 }
 
 .ficons {
 	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
+
+	margin: 0 auto;
 	width: 25%;
-	margin-left: 55%;
-	margin-top: -10%;
+	margin-top: 5%;
 }
 .ucspan {
 	margin: 5%;
@@ -249,10 +239,17 @@ form {
 	border: 2px solid var(--clean);
 	padding: 2%;
 }
-
+.imgDiv {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	font-size: 250%;
+	width: 75%;
+}
 .img {
 	border: 5px solid var(--bg);
 	display:block;
+	width:50%;
 }
 .border {
 	background: var(--clean);
@@ -269,7 +266,8 @@ form {
 }
 .ulA {
 	margin: 0 auto;
-	width: 25%;
+	width: 50%;
+	margin-right: 15%;
 }
 .userCalendar {
 	border: 3px solid var(--clean);

@@ -16,10 +16,11 @@ const FollowerCard = ({ name, img, github, files, iconGH, iconB }) => {
 						<span className="border">
 							<Image src={img} alt="avatar" avatar className="img" />
 						</span>
-						<span className="fctitle">
+
+
+					</div>	<span className="fctitle">
 							<h1>{name}</h1>
 						</span>
-					</div>
 					<div className="ficons">
 						<span className="fspan">
 							<a href={github}>
