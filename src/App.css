@@ -252,7 +252,7 @@ form {
 
 .img {
 	border: 5px solid var(--bg);
-	margin: 0 auto;
+	display:block;
 }
 .border {
 	background: var(--clean);
