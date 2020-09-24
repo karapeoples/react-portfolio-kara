@@ -1,0 +1,336 @@
+:root {
+	--bg: #1f5c70;
+	--clean: #e3d6c9;
+	--font-a: 'Sofia', cursive;
+	--font-b: 'Quicksand', sans-serif;
+	--font-c: 'Poiret One', cursive
+}
+
+.App {
+	text-align: center;
+}
+
+.App-header {
+	background-color: var(--bg);
+	min-height: 5vh;
+	display: flex;
+	align-items: center;
+}
+.logo {
+	margin-left: 10%;
+	height: 150px;
+}
+
+
+.bm-item {
+	font-family: var(--font-c);
+	font-size: 30px;
+	display: inline-block;
+	text-decoration: none;
+	margin-bottom: 10px;
+	color: var(--clean);
+}
+
+.bm-item:hover {
+	text-decoration: none;
+	color: var(--clean);
+	border: 1px solid var(--clean);
+	border-radius: 4px;
+}
+
+.bm-burger-button {
+	position: absolute;
+	width: 36px;
+	height: 30px;
+	right: 36px;
+}
+
+.bm-burger-bars {
+	background: var(--clean);
+}
+
+.bm-cross-button {
+	height: 24px;
+	width: 24px;
+}
+
+.bm-cross {
+	background: var(--clean);
+}
+
+.bm-menu {
+	background: var(--bg);
+	padding: 2.5% 30% 0;
+	font-size: 1.15em;
+}
+
+
+.bg2 {
+	margin-left: 32%;
+	margin-top: -2%;
+}
+
+.coverPage {
+	margin-left: -50%;
+}
+
+.landWrapper {
+	margin-top: 10%;
+
+}
+.landInfo {
+	font-family: var(--font-a);
+	font-size: 45px;
+}
+.design {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	margin: auto;
+	margin-top: 100px;
+}
+
+.design > *,
+.blend > * {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.rotatedBorder {
+	box-sizing: border-box;
+	border: 15px var(--bg) solid;
+	transform: rotate(45deg);
+	box-shadow: 0 0 10px var(--bg), inset 0 0 20px var(--bg);
+}
+
+.grid {
+	display: grid;
+	grid: repeat(2, 1fr) / repeat(2, 1fr);
+}
+
+[data-white] {
+	background-color: white;
+}
+
+.blend {
+	mix-blend-mode: multiply;
+}
+
+.coverPage {
+	object-fit: cover;
+}
+
+.design > .coverPage {
+	box-shadow: 0 0 20px #bac3c3;
+}
+
+.aboutH1 {
+	font-size: 40px;
+	font-family: var(--font-c)
+}
+.imageDiv {
+	width: 50%;
+	margin: 1% auto;
+}
+
+.image {
+	width: 75%;
+	margin: 1% auto;
+	border: 10px groove var(--bg);
+	height: 75vh;
+	border-radius: 5%;
+}
+.left-right{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 2%;
+}
+.lists{
+	font-size: 15px;
+	font-family: var(--font-b);
+	display:flex;
+	justify-content: center;
+}
+.about-p{
+	width: 48%;
+	font-size: 25px;
+	font-family: var(--font-c)
+}
+
+.userCardSection {
+	width: 60%;
+	margin: 0 auto;
+	font-family: var(--font-b);
+	font-size: 25px;
+	width: 80%;
+	color: var(--clean);
+}
+
+.fcContainer {
+	font-family: var(--font-b);
+	font-size: 25px;
+	/* width: 33%; */
+	margin: 0 auto;
+	color: var(--clean);
+}
+.fctitle {
+	font-family: var(--font-b);
+	font-size: 25px;
+	width: 75%;
+	margin: 0 auto;
+	color: var(--clean);
+}
+
+.imgDiv {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	font-size: 250%;
+	width: 75%;
+}
+
+form {
+	margin: 2%;
+	background: var(--clean);
+	padding: 2%;
+	color: var(--bg);
+	text-align: center;
+}
+.frame {
+	border: 5px solid var(--bg);
+	margin: 2%;
+	padding: 1%;
+}
+.font {
+	font-family: var(--font-c)
+}
+.avatar {
+	width: 98%;
+}
+
+.ucicons {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	width: 25%;
+	margin-left: 35%;
+	margin-top: -5%;
+}
+
+.ficons {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 25%;
+	margin-left: 55%;
+	margin-top: -10%;
+}
+.ucspan {
+	margin: 5%;
+	font-size: 35px;
+}
+
+.fspan {
+	margin: 5%;
+	font-size: 35px;
+}
+
+.gh {
+	color: var(--clean);
+	background: var(--bg);
+	border: 2px solid var(--clean);
+	padding: 2%;
+}
+
+.branch {
+	color: var(--clean);
+	background: var(--bg);
+	border: 2px solid var(--clean);
+	padding: 2%;
+}
+
+.img {
+	border: 5px solid var(--bg);
+	margin: 0 auto;
+}
+.border {
+	background: var(--clean);
+	padding: 1%;
+}
+
+.back {
+	background: var(--bg);
+	border: 3px groove black;
+}
+
+.bullet {
+	text-align: justify;
+}
+.ulA {
+	margin: 0 auto;
+	width: 25%;
+}
+.userCalendar {
+	border: 3px solid var(--clean);
+	width: 75%;
+	margin: 1% auto;
+}
+
+.followerCalendar {
+	border: 3px solid var(--clean);
+	width: 90%;
+	margin: 1% auto;
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+	margin: 5% auto;
+}
+
+.workCard {
+	font-family: 'Cinzel Decorative', cursive;
+	margin: 1% auto;
+}
+
+.showCase {
+	width: 100%;
+}
+
+@media (max-width: 800px) {
+	.userCardSection {
+		margin: 0 auto;
+		font-size: 20px;
+		width: 98%;
+	}
+
+	.bg2 {
+		margin-left: 23%;
+	}
+}
+
+@media (max-width: 500px) {
+	.userCardSection {
+		margin: 0 auto;
+
+		font-size: 12px;
+		width: 98%;
+	}
+
+	.ucicons {
+		margin-left: 45%;
+	}
+	nav {
+		margin-left: 3%;
+	}
+
+	.bg2 {
+		margin-left: 30%;
+	}
+	.section {
+		margin: 0 auto;
+		font-size: 12px;
+	}
+}
