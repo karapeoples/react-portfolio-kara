@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import avatar from '../images/avatar.jpg';
 import { Accordion, Icon } from 'semantic-ui-react'
 
 let oSkills = ['Fast Learner', 'Good Attitude', 'Friendly', 'Hard-Worker', 'Honest', "Creative"]

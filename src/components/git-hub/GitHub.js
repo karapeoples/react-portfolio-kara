@@ -11,7 +11,6 @@ library.add(faCodeBranch, faGithubSquare);
 const GitHub = () => {
 	const [user, setUser] = useState([]);
 	const [followersList, setFollowersList] = useState([]);
-	const [search, setSearch] = useState([]);
 	const [searchTerm, setSearchTerm] = useState("");
 
 	useEffect(() => {
@@ -36,13 +35,9 @@ const GitHub = () => {
 			});
 	}, []);
 
-	useEffect(() => {
-		const results = followersList.filter(character => {
+	const results = followersList.filter(character => {
 			return character.login.toLowerCase().includes(searchTerm.toLowerCase());
-		});
-		setSearch(results);
-		//eslint-disable-next-line
-	}, [searchTerm]);
+	})
 
 	const handleChange = e => {
 		setSearchTerm(e.target.value);
@@ -73,42 +68,23 @@ const GitHub = () => {
 						<input placeholder="Search..." onChange={handleChange} type="text" name="searchTerm" value={searchTerm} />
 					</section>
 				</form>
-				{searchTerm.length === 0 ? (
-					<div>
-						<Row>
-							{followersList.map(info => {
-								return (
-									<FollowerCard
-										name={info.login}
-										img={info.avatar_url}
-										github={info.html_url}
-										files={info.repos_url}
-										iconGH={faGithubSquare}
-										iconB={faCodeBranch}
-									/>
-								);
-							})}
-						</Row>
-					</div>
-				) : (
-					<div>
-						<Row>
-							{search.map(info => {
-								return (
-									<FollowerCard
-										name={info.login}
-										img={info.avatar_url}
-										github={info.html_url}
-										files={info.repos_url}
-										iconGH={faGithubSquare}
-										iconB={faCodeBranch}
-									/>
-								);
-							})}
-						</Row>
-					</div>
-				)}
 			</div>
+			<div>
+						<Row>
+							{results.map(info => {
+								return (
+									<FollowerCard
+										name={info.login}
+										img={info.avatar_url}
+										github={info.html_url}
+										files={info.repos_url}
+										iconGH={faGithubSquare}
+										iconB={faCodeBranch}
+									/>
+								);
+							})}
+						</Row>
+					</div>
 		</div>
 	);
 };

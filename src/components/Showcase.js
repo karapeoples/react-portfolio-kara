@@ -51,7 +51,7 @@ const Showcase = () => {
 	return (
 		<div>
 			<h1>Showcase</h1>
-			<Button target="_blank" style={navButton2} href='https://codestats.net/users/kararpeoples'>
+			<Button target="_blank" rel="noopener noreferrer" style={navButton2} href='https://codestats.net/users/kararpeoples'>
 				Code Stats
 			</Button>
 			<div>
@@ -59,7 +59,7 @@ const Showcase = () => {
 					<Col lg='4'>
 						<div className='workCard'>
 							<Card style={card1}>
-								<Button target="_blank"  style={navButton} href='https://med-cabinet.netlify.com/'>
+								<Button target="_blank" rel="noopener noreferrer"  style={navButton} href='https://med-cabinet.netlify.com/'>
 									Med-Cabinet
 								</Button>
 								<span style={divide} />
@@ -70,7 +70,7 @@ const Showcase = () => {
 									<p>Responsible for HTML and LESS Static Landing Page</p>
 								</CardBody>
 								<span style={divide} />
-								<Button target="_blank"  style={navButton} href='https://github.com/med-cabinet'>
+								<Button target="_blank" rel="noopener noreferrer"  style={navButton} href='https://github.com/med-cabinet'>
 									Repo
 								</Button>
 							</Card>
@@ -79,7 +79,7 @@ const Showcase = () => {
 					<Col lg='4'>
 						<div className='workCard'>
 							<Card style={card1}>
-								<Button target="_blank"  style={navButton} href='https://elegant-aryabhata-cdd64e.netlify.com/index.html'>
+								<Button target="_blank" rel="noopener noreferrer"  style={navButton} href='https://elegant-aryabhata-cdd64e.netlify.com/index.html'>
 									Keep Savvy
 								</Button>
 								<span style={divide} />
@@ -90,7 +90,7 @@ const Showcase = () => {
 									<p>I did all the work on the About Page</p>
 								</CardBody>
 								<span style={divide} />
-								<Button target="_blank"  style={navButton} href='https://github.com/build-week-prisonerSkills'>
+								<Button target="_blank" rel="noopener noreferrer"  style={navButton} href='https://github.com/build-week-prisonerSkills'>
 									Repo
 								</Button>
 							</Card>
@@ -99,7 +99,7 @@ const Showcase = () => {
 					<Col lg='4'>
 						<div className='workCard'>
 							<Card style={card1}>
-								<Button target="_blank"  style={navButton} href='https://fishfriendsapp.netlify.com/'>
+								<Button target="_blank" rel="noopener noreferrer"  style={navButton} href='https://fishfriendsapp.netlify.com/'>
 									Fish Friends
 								</Button>
 								<span style={divide} />
@@ -110,7 +110,7 @@ const Showcase = () => {
 									</div>
 								</CardBody>
 								<span style={divide} />
-								<Button target="_blank"  style={navButton} href='https://github.com/Fish-Friends-Build'>
+								<Button target="_blank" rel="noopener noreferrer"  style={navButton} href='https://github.com/Fish-Friends-Build'>
 									Repo
 								</Button>
 							</Card>
@@ -119,7 +119,7 @@ const Showcase = () => {
 					<Col lg='4'>
 						<div className='workCard'>
 							<Card style={card1}>
-								<Button target="_blank"  style={navButton} href='https://goldentutors.netlify.com/'>
+								<Button target="_blank" rel="noopener noreferrer"  style={navButton} href='https://goldentutors.netlify.com/'>
 									Golden Tutors
 								</Button>
 								<span style={divide} />
@@ -130,7 +130,7 @@ const Showcase = () => {
 									<p>Advanced React and State Management</p>
 								</CardBody>
 								<span style={divide} />
-								<Button target="_blank"  style={navButton} href='https://github.com/BW-SchoolInTheCloud1/FrontEnd'>
+								<Button target="_blank" rel="noopener noreferrer"  style={navButton} href='https://github.com/BW-SchoolInTheCloud1/FrontEnd'>
 									Repo
 								</Button>
 							</Card>
@@ -139,7 +139,7 @@ const Showcase = () => {
 					<Col lg='4'>
 						<div className='workCard'>
 							<Card style={card1}>
-								<Button target="_blank"  style={navButton} href='https://sfr-pearl.vercel.app/'>
+								<Button target="_blank" rel="noopener noreferrer"  style={navButton} href='https://sfr-pearl.vercel.app/'>
 									Secret Family Recipes
 								</Button>
 								<span style={divide} />
@@ -150,7 +150,7 @@ const Showcase = () => {
 									<p>Advanced React and State Management</p>
 								</CardBody>
 								<span style={divide} />
-								<Button target="_blank"  style={navButton} href='https://github.com/karapeoples/cherished-recipes-fe'>
+								<Button target="_blank" rel="noopener noreferrer"  style={navButton} href='https://github.com/karapeoples/cherished-recipes-fe'>
 									Repo
 								</Button>
 							</Card>
@@ -159,7 +159,7 @@ const Showcase = () => {
 					<Col lg='4'>
 						<div className='workCard'>
 							<Card style={card1}>
-								<Button target="_blank"  style={navButton} href='https://optimistic-chandrasekhar-c6d265.netlify.app/'>
+								<Button target="_blank" rel="noopener noreferrer"  style={navButton} href='https://optimistic-chandrasekhar-c6d265.netlify.app/'>
 									Troll Hub
 								</Button>
 								<span style={divide} />
@@ -170,7 +170,7 @@ const Showcase = () => {
 									<p>Consumed Data Science API and Built RestAPI</p>
 								</CardBody>
 								<span style={divide} />
-								<Button target="_blank"  style={navButton} href='https://github.com/Build-Week-SaltiestHackerNewsTrolls2/back-end'>
+								<Button target="_blank" rel="noopener noreferrer"  style={navButton} href='https://github.com/Build-Week-SaltiestHackerNewsTrolls2/back-end'>
 									Repo
 								</Button>
 							</Card>
@@ -179,7 +179,7 @@ const Showcase = () => {
 					<Col lg='4'>
 						<div className='workCard'>
 							<Card style={card1}>
-								<Button target="_blank"  style={navButton} href='https://co-make.chitowncoder.vercel.app/'>
+								<Button target="_blank" rel="noopener noreferrer"  style={navButton} href='https://co-make.chitowncoder.vercel.app/'>
 									Co-Make
 								</Button>
 								<span style={divide} />
@@ -190,7 +190,7 @@ const Showcase = () => {
 									<p>Built RestAPI and Helped Guide React Portion</p>
 								</CardBody>
 								<span style={divide} />
-								<Button target="_blank"  style={navButton} href='https://github.com/karapeoples/be_cm'>
+								<Button target="_blank" rel="noopener noreferrer"  style={navButton} href='https://github.com/karapeoples/be_cm'>
 									Repo
 								</Button>
 							</Card>
