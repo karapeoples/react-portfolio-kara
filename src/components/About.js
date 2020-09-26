@@ -21,16 +21,16 @@ const handleClick = (e, titleProps) => {
 
   return (
 			<section className='section'>
-				<span className='left-right'>
+			 <span className='left-right'>
 					<section className='lists'>
 						<Accordion styled>
-							<Accordion.Title class='active title' active={activeIndex === 0} index={0} onClick={handleClick}>
+							<Accordion.Title className='active title' active={activeIndex === 0} index={0} onClick={handleClick}>
 								I am a<Icon name='dropdown' />
 							</Accordion.Title>
 							<Accordion.Content active={activeIndex === 0}>
 								<ul>
-									{oSkills.map((info) => {
-										return <li> {info} </li>
+									{oSkills.map((info, index) => {
+										return <li key={index}> {info} </li>
 									})}
 								</ul>
 							</Accordion.Content>
@@ -40,8 +40,8 @@ const handleClick = (e, titleProps) => {
 							</Accordion.Title>
 							<Accordion.Content active={activeIndex === 1}>
 								<ul>
-									{language.map((info) => {
-										return <li> {info} </li>
+									{language.map((info, index) => {
+										return <li key={index}> {info} </li>
 									})}
 								</ul>
 							</Accordion.Content>
@@ -51,8 +51,8 @@ const handleClick = (e, titleProps) => {
 							</Accordion.Title>
 							<Accordion.Content active={activeIndex === 2}>
 								<ul>
-									{computer.map((info) => {
-										return <li> {info} </li>
+									{computer.map((info, index) => {
+										return <li key={index}> {info} </li>
 									})}
 								</ul>
 							</Accordion.Content>
