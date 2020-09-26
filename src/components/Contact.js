@@ -15,7 +15,7 @@ const Contact = () => {
 		e.preventDefault()
 
 		emailjs
-			.send('kara_contact', 'template_xwo7vqy', text, 'user_o7eYFVCTW5JNsCh8bos24')
+			.send('kara_contact', 'template_1pq3c8a', text)
 			.then((res) => {
 				console.log('SUCCESS!', res.status, res.text)
 			})
