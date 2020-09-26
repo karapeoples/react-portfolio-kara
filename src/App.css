@@ -283,6 +283,7 @@ form {
 
 .contact {
 	display: flex;
+	align-items: center;
 	width: 50%;
 	margin: 5% auto;
 }
