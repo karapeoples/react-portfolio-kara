@@ -59,13 +59,13 @@ const Contact = () => {
 				<form id='contact-form' onSubmit={handleSubmit}>
 					<h1>Contact Me</h1>
 					<label>Name</label>
-				<input requried placeholder='Name' type='text' name='from_name' onChange={handleChange} value={text.from_name}/>
+				<input placeholder='Name' type='text' name='from_name' onChange={handleChange} value={text.from_name}/>
 				<br/>
 					<label>Email</label>
-				<input required placeholder='Email..' type='email' name='user_email' onChange={handleChange} value={text.user_email} />
+				<input placeholder='Email..' type='email' name='user_email' onChange={handleChange} value={text.user_email} />
 				<br/>
 					<label>Message</label>
-					<textarea required placeholder="Write me a Note..." name='message' onChange={handleChange} value={text.message} />
+					<textarea placeholder="Write me a Note..." name='message' onChange={handleChange} value={text.message} />
 					<input type='submit' value='Send' />
 				</form>
 			</section>
