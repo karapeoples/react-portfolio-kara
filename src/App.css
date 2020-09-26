@@ -283,7 +283,6 @@ form {
 
 .contact {
 	display: flex;
-	flex-direction: column;
 	width: 25%;
 	margin: 5% auto;
 }
@@ -297,6 +296,14 @@ form {
 	width: 100%;
 }
 
+#contact-form{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	align-items: center;
+	margin: 0 auto;
+}
+
 @media (max-width: 800px) {
 	.userCardSection {
 		margin: 0 auto;
@@ -306,6 +313,13 @@ form {
 
 	.bg2 {
 		margin-left: 23%;
+	}
+	.left-right{
+		display: flex;
+		flex-direction: column;
+	}
+	.about-p{
+		width: 98%;
 	}
 }
 
@@ -331,4 +345,5 @@ form {
 		margin: 0 auto;
 		font-size: 12px;
 	}
+
 }
